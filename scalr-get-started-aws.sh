@@ -20,11 +20,8 @@ provider \"aws\" {
 resource \"aws_instance\" \"scalr\" {
   ami           = \"ami-07efac79022b86107\"
   instance_type = \"t2.micro\"
-}
-
-output \"IP\"{
-  value = \"${aws_instance.scalr.public_ip}\"
 }" > main.tf
+
 echo "credentials \"$account.scalr.io\" {
   token = \"$token\"
 }" >> ~/.terraformrc
