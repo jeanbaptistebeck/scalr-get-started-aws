@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Welcome to Get Started With Scalr On AWS"
-read "What is your Scalr API token? " token
-read "What is your account name? " account
-read "What is your organization name? " organization
+read -p "What is your Scalr API token? " token
+read -p "What is your account name? " account
+read -p "What is your organization name? " organization
 echo "terraform {
   backend \"remote\" {
     hostname     = \"$account.scalr.io\"
